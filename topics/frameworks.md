@@ -13,6 +13,7 @@ packages:
  - rustful
  - rustless
  - pencil
+ - tarpc
 
 news_tag: frameworks
 ---
