@@ -13,6 +13,7 @@ packages:
  - rustful
  - rustless
  - pencil
+ - edge
 
 news_tag: frameworks
 ---
