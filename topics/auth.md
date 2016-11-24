@@ -14,6 +14,7 @@ packages:
  - frank_jwt
  - macaroons
  - otpauth
+ - rust_accountkit
 
 missing:
  - OAuth-Provider Support
