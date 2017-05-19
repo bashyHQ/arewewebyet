@@ -8,6 +8,7 @@ intro: When building a modern web-application you don't want to bother on how to
 
 packages:
  - conduit
+ - rustfbp
  - iron
  - nickel
  - rocket
