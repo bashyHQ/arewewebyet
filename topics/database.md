@@ -10,6 +10,7 @@ intro: Proper Database support is crucial for modern web development. This page 
 drivers:
  - mysql
  - postgres
+ - pleingres
  - redis
  - rusqlite
  - leveldb
