@@ -18,6 +18,7 @@ packages:
  - polly
  - tera
  - askama
+ - ructe
 
 news_tag: templating
 ---
