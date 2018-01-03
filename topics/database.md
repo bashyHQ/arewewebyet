@@ -31,6 +31,7 @@ orms:
  - ohmers
 
 tools:
+ - migrant
  - schemamama
  - trek
  - dbmigrate
