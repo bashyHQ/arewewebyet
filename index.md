@@ -74,13 +74,10 @@ If you need to (or want to) go lower in the stack:
     <a href="/topics/stack/#pkg-hyper">Hyper</a>
   </li>
   <li>
-    <a href="/topics/stack/#pkg-rotor-http">Rotor</a>
-  </li>
-  <li>
     <a href="/topics/stack/#pkg-solicit">Solicit</a>
   </li>
   <li>
-    <a href="/topics/stack/#pkg-tiny_http">tiny_http</a> 
+    <a href="/topics/stack/#pkg-tiny_http">tiny_http</a>
   </li>
 </ul>
 

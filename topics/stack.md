@@ -9,7 +9,6 @@ intro: A strong lower web-stack is important not only to build strong web framew
 servers:
  - hyper
  - tiny-http
- - rotor-http
 
 http2:
  - h2
