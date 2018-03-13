@@ -29,9 +29,6 @@ The web frameworks of choice in the community are:
     <a href="/topics/frameworks/#pkg-gotham">Gotham</a>
   </li>
   <li>
-    <a href="/topics/frameworks/#pkg-iron">Iron</a>
-  </li>
-  <li>
     <a href="/topics/frameworks/#pkg-nickel">Nickel</a>
   </li>
   <li>
