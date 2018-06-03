@@ -49,7 +49,7 @@ Throughout the app – mostly on section titles – you find the small `level in
   <li>{% include level.html level=3 %} – not yet stable, but progressing</li>
   <li>{% include level.html level=4 %} – unstable/incomplete, needs work</li>
   <li>{% include level.html level=5 %} – barely there, needs serious work</li>
-  <li>{% include level.html level=6 %} – basically non-existant</li>
+  <li>{% include level.html level=6 %} – basically non-existent</li>
 </ul>
 
 If you need a reminder, you can also just hover over the glyph to get the text.
