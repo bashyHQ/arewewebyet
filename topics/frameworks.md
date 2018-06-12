@@ -9,7 +9,6 @@ intro: When building a modern web-application you don't want to bother on how to
 packages:
  - actix-web
  - conduit
- - edge
  - gotham
  - iron
  - nickel
