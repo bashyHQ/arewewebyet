@@ -9,9 +9,7 @@ intro: Without a proper HTTP Client there isn't much web - even for the backend,
 packages:
  - hyper
  - curl
- - ease
  - reqwest
- - requests
 
 news_tag: clients
 ---
