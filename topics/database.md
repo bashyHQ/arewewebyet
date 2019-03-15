@@ -14,29 +14,23 @@ drivers:
  - redis
  - rusqlite
  - leveldb
- - cql_bindgen
  - rocksdb
- - firebase
  - couchdb
  - etcd
  - influent
  - mongodb
- - cassandra
  - cassandra-cpp
  - mongo_driver
 
 orms:
  - rustorm
  - diesel
- - codegenta
  - tql
- - ohmers
 
 tools:
  - migrant
  - schemamama
  - trek
- - dbmigrate
 
 
 news_tag: database
