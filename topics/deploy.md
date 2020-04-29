@@ -18,4 +18,6 @@ There are [official docker images](https://github.com/rust-lang-nursery/docker-r
 
 <h2>Unikernels {% include level.html level=4 %}</h2>
 
-Unikernels are the rising star and newest hot thing to do big scale deployment. With Rust being a system language unikernels are an obvious approach to the problem and doing your research you'll find that there is a lot happening here indeed. In fact, since sept 2015, rust itself supports the [rumprun kernel as a compile target](https://github.com/rust-lang/rust/commit/c099cfab061e8464141a1cf85c2bd09536a311d0). That said, unikernels are still very young and a rather unexplored technology – unless you really need that extra security, you are probably better off running it on bare hardware for now. 
+Unikernels are the rising star and newest hot thing to do big scale deployment. With Rust being a system language unikernels are an obvious approach to the problem and doing your research you'll find that there is a lot happening here indeed. There's a number of unikernels which support rust:
+ - [nanos](https://github.com/nanovms/nanos)
+ - [rumprun](https://github.com/rumpkernel/rumprun) with `--target x86_64-rumprun-netbsd`
