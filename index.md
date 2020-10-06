@@ -77,17 +77,18 @@ If you need to (or want to) go lower in the stack:
 
 ### Getting started
 
-After you've set up your Rust and worked yourself [through "The Book"](https://doc.rust-lang.org/book/), you might want to check any of these blog posts (ordered latest published first):
+A small selection of tutorials with no particular order
 
-- [Using Stainless with Rocket](http://neikos.me/Using_Stainless_with_Rocket.html)
-- [REST in Rust](https://gsquire.github.io/static/post/rest-in-rust/)
-- [Connecting a webservice to a database in Rust](http://hermanradtke.com/2016/05/23/connecting-webservice-database-rust.html)
-- [Let's Build a Web Server in Rust](https://dfockler.github.io/2016/05/20/web-server.html)
-- [Creating a basic webservice in Rust](http://hermanradtke.com/2016/05/16/creating-a-basic-webservice-in-rust.html)
-- [Build an API in Rust with JWT Authentication using Nickel.rs](https://auth0.com/blog/2015/11/30/build-an-api-in-rust-with-jwt-authentication-using-nickelrs/)
-
-
-Either way you choose, if you find yourself stuck and looking for help, the [official Rust-Lang user forum](https://users.rust-lang.org/) has a [help section](https://users.rust-lang.org/c/help), where you are welcome to post your questions and soon will find help.
+- [Creating a REST API in Rust with warp](https://blog.logrocket.com/creating-a-rest-api-in-rust-with-warp/)
+- [Create an async CRUD web service in Rust with warp](https://blog.logrocket.com/create-an-async-crud-web-service-in-rust-with-warp/)
+- [Building an API with Rust using Tokio and Warp](https://levelup.gitconnected.com/building-an-api-using-warp-and-tokio-26a52173860a)
+- [Build an API in Rust with JWT Authentication](https://auth0.com/blog/build-an-api-in-rust-with-jwt-authentication-using-actix-web/)
+- [Simple TODO Service With Actix (Rust): Part 1](https://dzone.com/articles/simple-todo-service-with-actix-rust-part-1)
+- [Rust + Actix + CosmosDB (MongoDB) tutorial api](https://dev.to/jbarszczewski/rust-actix-cosmosdb-mongodb-tutorial-api-17i5)
+- [Build a Smart Bookmarking Tool with Rust and Rocket](https://developers.facebook.com/blog/post/2020/06/03/build-smart-bookmarking-tool-rust-rocket/)
+- [Rust Web development | Boilerplate free with Rocket](https://dev.to/nemesiscodex/rust-web-development-boilerplate-free-with-rocket-438l)
+- [Your first Rust server with Rocket](https://www.newline.co/@lsunsi/your-first-rust-server-with-rocket--5967d91d)
+- [Serverless Rust with Tide, Appsody and Knative](https://appsody.dev/tutorials/ServerlessRust/)
 
 
 ## In detail
