@@ -8,26 +8,27 @@ intro: Proper Database support is crucial for modern web development. This page 
 
 
 drivers:
+ - cassandra-cpp
+ - cdrs
+ - couchbase
+ - couchdb
+ - darkredis
+ - etcd
+ - influent
+ - leveldb
+ - memcache
+ - mongodb
+ - mongo_driver
  - mysql
  - mysql_async
  - postgres
  - pleingres
  - redis
  - redis-async
- - darkredis
- - rusqlite
- - tokio-postgres
- - leveldb
  - rocksdb
- - couchdb
- - etcd
- - influent
- - cassandra-cpp
- - cdrs
- - memcache
- - mongodb
- - mongo_driver
+ - rusqlite
  - sqlx
+ - tokio-postgres
 
 orms:
  - diesel
