@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Crypto » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<h1>Crypto 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</h1>
+
+
+  <p>Cryptography is a corner stone of a trusted web. Without it many services could not be offered reliably. While rust has a strong RNG, the main suite in use isn't pure rust but the (in)famous openssl.</p>
+
+
+
+<div>
+<h2>Suites <span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-openssl" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-21, last updated: 2018-12-16">openssl</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/openssl"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sfackler&#x2F;rust-openssl"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-openssl"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/openssl.svg" />
+    <img src="https://img.shields.io/crates/d/openssl.svg" />
+    <img src="https://img.shields.io/crates/l/openssl.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    OpenSSL bindings
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-orion" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-02-18, last updated: 2020-03-09">orion</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/orion"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;orion"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;brycx&#x2F;orion"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-orion"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/orion.svg" />
+    <img src="https://img.shields.io/crates/d/orion.svg" />
+    <img src="https://img.shields.io/crates/l/orion.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Usable, easy and safe pure-Rust crypto
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-libsodium-sys" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-03-25, last updated: 2018-12-01">libsodium-sys</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/libsodium-sys"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;sodiumoxide.github.io&#x2F;sodiumoxide"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sodiumoxide&#x2F;sodiumoxide.git"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-libsodium-sys"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/libsodium-sys.svg" />
+    <img src="https://img.shields.io/crates/d/libsodium-sys.svg" />
+    <img src="https://img.shields.io/crates/l/libsodium-sys.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    FFI binding to libsodium
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-gpgme" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-06-11, last updated: 2018-06-14">gpgme</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/gpgme"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;gpgme"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;gpg-rs&#x2F;gpgme"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-gpgme"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/gpgme.svg" />
+    <img src="https://img.shields.io/crates/d/gpgme.svg" />
+    <img src="https://img.shields.io/crates/l/gpgme.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    GPGme bindings for Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-ring" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-08-15, last updated: 2019-01-09">ring</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/ring"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;briansmith.org&#x2F;rustdoc&#x2F;ring&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;briansmith&#x2F;ring"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-ring"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/ring.svg" />
+    <img src="https://img.shields.io/crates/d/ring.svg" />
+    <img src="https://img.shields.io/crates/l/ring.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Safe, fast, small crypto using Rust.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2>Random Number Generators  <span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
+ <i class="fa fa-check-circle"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-rand" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-02-03, last updated: 2019-01-09">rand</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rand"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;rust-lang-nursery&#x2F;rand"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;rand"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;rust-lang-nursery&#x2F;rand"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-rand"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rand.svg" />
+    <img src="https://img.shields.io/crates/d/rand.svg" />
+    <img src="https://img.shields.io/crates/l/rand.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Random number generators and other randomness functionality.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-uuid" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-11, last updated: 2018-09-14">uuid</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/uuid"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;uuid-rs&#x2F;uuid"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;uuid"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;uuid-rs&#x2F;uuid"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-uuid"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/uuid.svg" />
+    <img src="https://img.shields.io/crates/d/uuid.svg" />
+    <img src="https://img.shields.io/crates/l/uuid.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A library to generate and parse UUIDs.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2>Password  <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-bcrypt" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-12-24, last updated: 2018-10-22">bcrypt</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/bcrypt"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;rust-bcrypt"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;rust-bcrypt"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-bcrypt"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/bcrypt.svg" />
+    <img src="https://img.shields.io/crates/d/bcrypt.svg" />
+    <img src="https://img.shields.io/crates/l/bcrypt.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Easily hash and verify passwords using bcrypt
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-djangohashers" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-12-31, last updated: 2018-11-17">djangohashers</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/djangohashers"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;racum&#x2F;rust-djangohashers"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;djangohashers&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;racum&#x2F;rust-djangohashers"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-djangohashers"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/djangohashers.svg" />
+    <img src="https://img.shields.io/crates/d/djangohashers.svg" />
+    <img src="https://img.shields.io/crates/l/djangohashers.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A Rust port of the password primitives used in Django project.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-pwhash" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-02-09, last updated: 2019-01-13">pwhash</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/pwhash"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;inejge&#x2F;pwhash"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;inejge.github.io&#x2F;pwhash"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;inejge&#x2F;pwhash"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-pwhash"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/pwhash.svg" />
+    <img src="https://img.shields.io/crates/d/pwhash.svg" />
+    <img src="https://img.shields.io/crates/l/pwhash.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A collection of password hashing routines in pure Rust.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2>TLS  <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span></h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-rustls" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-08-27, last updated: 2018-09-30">rustls</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rustls"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;ctz&#x2F;rustls"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;ctz&#x2F;rustls"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-rustls"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rustls.svg" />
+    <img src="https://img.shields.io/crates/d/rustls.svg" />
+    <img src="https://img.shields.io/crates/l/rustls.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Rustls is a modern TLS library written in Rust.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-tokio-openssl" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-23, last updated: 2019-11-26">tokio-openssl</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tokio-openssl"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;alexcrichton&#x2F;tokio-openssl"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;tokio-openssl"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;alexcrichton&#x2F;tokio-openssl"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-tokio-openssl"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tokio-openssl.svg" />
+    <img src="https://img.shields.io/crates/d/tokio-openssl.svg" />
+    <img src="https://img.shields.io/crates/l/tokio-openssl.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An implementation of SSL streams for Tokio backed by OpenSSL
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-tokio-rustls" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-02-22, last updated: 2019-12-08">tokio-rustls</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tokio-rustls"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;quininer&#x2F;tokio-rustls"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;tokio-rustls"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;quininer&#x2F;tokio-rustls"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-tokio-rustls"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tokio-rustls.svg" />
+    <img src="https://img.shields.io/crates/d/tokio-rustls.svg" />
+    <img src="https://img.shields.io/crates/l/tokio-rustls.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Asynchronous TLS&#x2F;SSL streams for Tokio using Rustls.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-tokio-tls" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-21, last updated: 2019-11-26">tokio-tls</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tokio-tls"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;tokio.rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;tokio-tls&#x2F;0.3.0-alpha.6&#x2F;tokio_tls&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;tokio"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-tokio-tls"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tokio-tls.svg" />
+    <img src="https://img.shields.io/crates/d/tokio-tls.svg" />
+    <img src="https://img.shields.io/crates/l/tokio-tls.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An implementation of TLS&#x2F;SSL streams for Tokio giving an implementation of TLS
+for nonblocking I&#x2F;O streams.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-openssl" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-21, last updated: 2018-12-16">openssl</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/openssl"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sfackler&#x2F;rust-openssl"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-openssl"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/openssl.svg" />
+    <img src="https://img.shields.io/crates/d/openssl.svg" />
+    <img src="https://img.shields.io/crates/l/openssl.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    OpenSSL bindings
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-webpki" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-08-16, last updated: 2019-01-09">webpki</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/webpki"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;briansmith.org&#x2F;rustdoc&#x2F;webpki&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;briansmith&#x2F;webpki"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-webpki"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/webpki.svg" />
+    <img src="https://img.shields.io/crates/d/webpki.svg" />
+    <img src="https://img.shields.io/crates/l/webpki.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Web PKI X.509 Certificate Verification.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2>Tooling  <span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span></h2>
+<p><em>Tooling is great, just a little scarce...</em></p>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-tempfile" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-04-14, last updated: 2018-11-26">tempfile</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tempfile"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="http:&#x2F;&#x2F;stebalien.com&#x2F;projects&#x2F;tempfile-rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;tempfile"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Stebalien&#x2F;tempfile"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-tempfile"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tempfile.svg" />
+    <img src="https://img.shields.io/crates/d/tempfile.svg" />
+    <img src="https://img.shields.io/crates/l/tempfile.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A library for managing temporary files and directories.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-cookie" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-22, last updated: 2018-07-25">cookie</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/cookie"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;cookie"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;alexcrichton&#x2F;cookie-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-cookie"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/cookie.svg" />
+    <img src="https://img.shields.io/crates/d/cookie.svg" />
+    <img src="https://img.shields.io/crates/l/cookie.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Crate for parsing HTTP cookie headers and managing a cookie jar. Supports signed
+and private (encrypted + signed) jars.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-frank_jwt" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-07-27, last updated: 2018-12-07">frank_jwt</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/frank_jwt"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;GildedHonour&#x2F;frank_jwt"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;github.com&#x2F;GildedHonour&#x2F;frank_jwt"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;GildedHonour&#x2F;frank_jwt"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-frank_jwt"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/frank_jwt.svg" />
+    <img src="https://img.shields.io/crates/d/frank_jwt.svg" />
+    <img src="https://img.shields.io/crates/l/frank_jwt.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Implementation of JSON JWT
+  </p>
+</li>
+
+
+  
+</ul>
+<h2>Also</h2>
+<h3>Hashing  <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span></h3>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-fnv" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-04-06, last updated: 2017-11-09">fnv</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/fnv"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;doc.servo.org&#x2F;fnv&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;rust-fnv"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-fnv"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/fnv.svg" />
+    <img src="https://img.shields.io/crates/d/fnv.svg" />
+    <img src="https://img.shields.io/crates/l/fnv.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Fowler–Noll–Vo hash function
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-twox-hash" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-09, last updated: 2018-12-10">twox-hash</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/twox-hash"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;twox-hash&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;shepmaster&#x2F;twox-hash"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-twox-hash"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/twox-hash.svg" />
+    <img src="https://img.shields.io/crates/d/twox-hash.svg" />
+    <img src="https://img.shields.io/crates/l/twox-hash.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A Rust implementation of the XXHash algorithm
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-md5" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-06-21, last updated: 2018-12-14">md5</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/md5"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;stainless-steel&#x2F;md5"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;md5"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;stainless-steel&#x2F;md5"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-md5"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/md5.svg" />
+    <img src="https://img.shields.io/crates/d/md5.svg" />
+    <img src="https://img.shields.io/crates/l/md5.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    The package provides the MD5 hash function.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-djangohashers" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-12-31, last updated: 2018-11-17">djangohashers</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/djangohashers"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;racum&#x2F;rust-djangohashers"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;djangohashers&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;racum&#x2F;rust-djangohashers"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-djangohashers"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/djangohashers.svg" />
+    <img src="https://img.shields.io/crates/d/djangohashers.svg" />
+    <img src="https://img.shields.io/crates/l/djangohashers.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A Rust port of the password primitives used in Django project.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-blake2-rfc" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-24, last updated: 2017-11-24">blake2-rfc</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/blake2-rfc"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;blake2-rfc"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;cesarb&#x2F;blake2-rfc"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-blake2-rfc"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/blake2-rfc.svg" />
+    <img src="https://img.shields.io/crates/d/blake2-rfc.svg" />
+    <img src="https://img.shields.io/crates/l/blake2-rfc.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A pure Rust implementation of BLAKE2 based on RFC 7693.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-bcrypt" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-12-24, last updated: 2018-10-22">bcrypt</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/bcrypt"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;rust-bcrypt"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;rust-bcrypt"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-bcrypt"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/bcrypt.svg" />
+    <img src="https://img.shields.io/crates/d/bcrypt.svg" />
+    <img src="https://img.shields.io/crates/l/bcrypt.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Easily hash and verify passwords using bcrypt
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-pwhash" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-02-09, last updated: 2019-01-13">pwhash</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/pwhash"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;inejge&#x2F;pwhash"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;inejge.github.io&#x2F;pwhash"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;inejge&#x2F;pwhash"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-pwhash"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/pwhash.svg" />
+    <img src="https://img.shields.io/crates/d/pwhash.svg" />
+    <img src="https://img.shields.io/crates/l/pwhash.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A collection of password hashing routines in pure Rust.
+  </p>
+</li>
+
+
+  
+</ul>
+<h3>Algorithms  <span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span></h3>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-blake2-rfc" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-24, last updated: 2017-11-24">blake2-rfc</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/blake2-rfc"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;blake2-rfc"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;cesarb&#x2F;blake2-rfc"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-blake2-rfc"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/blake2-rfc.svg" />
+    <img src="https://img.shields.io/crates/d/blake2-rfc.svg" />
+    <img src="https://img.shields.io/crates/l/blake2-rfc.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A pure Rust implementation of BLAKE2 based on RFC 7693.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-bulletproofs" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-06-27, last updated: 2019-05-07">bulletproofs</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/bulletproofs"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dalek-cryptography&#x2F;bulletproofs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-bulletproofs"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/bulletproofs.svg" />
+    <img src="https://img.shields.io/crates/d/bulletproofs.svg" />
+    <img src="https://img.shields.io/crates/l/bulletproofs.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A pure-Rust implementation of Bulletproofs using Ristretto
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-curve25519-dalek" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-08, last updated: 2019-05-07">curve25519-dalek</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/curve25519-dalek"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;dalek.rs&#x2F;curve25519-dalek"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;curve25519-dalek"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dalek-cryptography&#x2F;curve25519-dalek"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-curve25519-dalek"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/curve25519-dalek.svg" />
+    <img src="https://img.shields.io/crates/d/curve25519-dalek.svg" />
+    <img src="https://img.shields.io/crates/l/curve25519-dalek.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A pure-Rust implementation of group operations on ristretto255 and Curve25519
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-ed25519-dalek" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-09, last updated: 2019-01-18">ed25519-dalek</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/ed25519-dalek"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;dalek.rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;ed25519-dalek"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dalek-cryptography&#x2F;ed25519-dalek"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-ed25519-dalek"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/ed25519-dalek.svg" />
+    <img src="https://img.shields.io/crates/d/ed25519-dalek.svg" />
+    <img src="https://img.shields.io/crates/l/ed25519-dalek.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Fast and efficient ed25519 EdDSA key generations, signing, and verification in pure Rust.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-merlin" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-08-15, last updated: 2019-04-30">merlin</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/merlin"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;docs.rs&#x2F;merlin"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;merlin"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dalek-cryptography&#x2F;merlin"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-merlin"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/merlin.svg" />
+    <img src="https://img.shields.io/crates/d/merlin.svg" />
+    <img src="https://img.shields.io/crates/l/merlin.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Composable proof transcripts for public-coin arguments of knowledge
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-secp256k1" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-04, last updated: 2018-12-19">secp256k1</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/secp256k1"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;rust-bitcoin&#x2F;rust-secp256k1&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;secp256k1&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;rust-bitcoin&#x2F;rust-secp256k1&#x2F;"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-secp256k1"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/secp256k1.svg" />
+    <img src="https://img.shields.io/crates/d/secp256k1.svg" />
+    <img src="https://img.shields.io/crates/l/secp256k1.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Rust bindings for Pieter Wuille&#x27;s `libsecp256k1` library. Implements ECDSA for the SECG elliptic curve group secp256k1 and related utilities.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-subtle" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-05-31, last updated: 2019-04-29">subtle</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/subtle"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;dalek.rs&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;subtle"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dalek-cryptography&#x2F;subtle"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-subtle"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/subtle.svg" />
+    <img src="https://img.shields.io/crates/d/subtle.svg" />
+    <img src="https://img.shields.io/crates/l/subtle.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Pure-Rust traits and utilities for constant-time cryptographic implementations.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-twox-hash" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-09, last updated: 2018-12-10">twox-hash</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/twox-hash"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;twox-hash&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;shepmaster&#x2F;twox-hash"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-twox-hash"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/twox-hash.svg" />
+    <img src="https://img.shields.io/crates/d/twox-hash.svg" />
+    <img src="https://img.shields.io/crates/l/twox-hash.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A Rust implementation of the XXHash algorithm
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-x25519-dalek" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-09-14, last updated: 2019-03-29">x25519-dalek</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/x25519-dalek"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;dalek.rs&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;x25519-dalek"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dalek-cryptography&#x2F;x25519-dalek"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-x25519-dalek"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/x25519-dalek.svg" />
+    <img src="https://img.shields.io/crates/d/x25519-dalek.svg" />
+    <img src="https://img.shields.io/crates/l/x25519-dalek.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    X25519 elliptic curve Diffie-Hellman key exchange in pure-Rust, using curve25519-dalek.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-zkp" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-05-30, last updated: 2019-04-03">zkp</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/zkp"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;zkp"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;hdevalence&#x2F;zkp"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-zkp"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/zkp.svg" />
+    <img src="https://img.shields.io/crates/d/zkp.svg" />
+    <img src="https://img.shields.io/crates/l/zkp.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    This crate has an experimental zero-knowledge proof compiler implemented using Rust macros
+  </p>
+</li>
+
+
+  
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="alert-box">
+  <h3>Do you know something we don't?</h3>
+  <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a
+      href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+  </p>
+</div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

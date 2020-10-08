@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Kinglet – an asynchronous HTTP server » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<div class="news">
+
+
+  <h1>Kinglet – an asynchronous HTTP server</h1>
+
+  <div class="meta">
+    Published 2015-12-03 
+    under <ul>
+      
+      <li>
+        stack
+      </li>
+      
+      <li>
+        kinglet
+      </li>
+      
+      <li>
+        async
+      </li>
+      
+    </ul>
+    
+  </div>
+
+
+  
+  <blockquote class="">
+    <cite>
+
+      Posted
+      
+      on <a href="https:&#x2F;&#x2F;users.rust-lang.org&#x2F;t&#x2F;kinglet-an-asynchronous-http-server&#x2F;3855">Rust Users Forum</a>
+      
+
+      
+      by <span class="name">pyfisch</a>
+       :
+    </cite>
+    <p><a href="https://github.com/pyfisch/kinglet" rel="nofollow">Kinglet</a> is the beginning of a HTTP server based on mio. It manages connnections using state machines from <a href="https://github.com/tailhook/rotor" rel="nofollow">rotor</a> by <a class="mention" href="/users/tailhook">@tailhook</a>. The most interesting part is the <a href="https://github.com/pyfisch/kinglet/blob/bb965b3bdddf5c2b84c04fd599575cdb0207efe8/src/http1.rs#L132-L222" rel="nofollow">request state machine</a>: with only a few lines of code it supports parsing requests with fixed size bodies, chunked bodies with optional trailers and even pipelining. Adding support for more states like <code>100-Expect-Continue</code> will be easy. Some parts of the code still need cleanup and the structures of requests and responses will change.</p>
+
+  </blockquote>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

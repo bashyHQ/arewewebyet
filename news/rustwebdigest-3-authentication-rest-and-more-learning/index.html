@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>RustWebDigest #3: Authentication, Rust and Rest and more learning » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<div class="news">
+
+
+  <h1>RustWebDigest #3: Authentication, Rust and Rest and more learning</h1>
+
+  <div class="meta">
+    Published 2016-07-24 
+    under <ul>
+      
+      <li>
+        logging
+      </li>
+      
+      <li>
+        rest
+      </li>
+      
+    </ul>
+    
+  </div>
+
+
+  
+  <blockquote class="">
+    <cite>
+
+      Posted
+      
+
+      
+      by <span class="name">ben</a>
+       :
+    </cite>
+    <p>The biggest news since the last RustWebDigest is without question the alpha release of Servo – the web rendering engine entirely written in Rust by Mozilla. It's a big effing deal and if you haven't downloaded it yet, I highly recommend doing so. While its still in alpha stage, it is very impressive what the team has delivered and keeps delivering with their nightly builds 👏.</p>
+<p>The second most widely spread news Armin Ronacher's – you know, the person behind Flask – blog post about doing nice <a href="http://lucumr.pocoo.org/2016/7/10/rust-rest/">API development for Rest-APIs with Rust</a> that he encountered while implementing the Sentry Rust Client. Similarly big waves only received Dropbox for their <a href="https://blogs.dropbox.com/tech/2016/06/lossless-compression-with-brotli/">all rust brotli implementation, claiming to bring pied piper to life</a>, but weirdly only implementing <em>de</em> compression so far. But both of sources of big credit showing strengths of Rust in very public posts, increasing the visibility and viability of Rust as decent web development environment.</p>
+<h2 id="authentication-remote-logging">Authentication, remote logging</h2>
+<p>After due consideration we've decided to rename the prior OAuth topic to a broader &quot;Authentication/Authorization&quot; topic as suggested by <a href="https://github.com/TheNeikos">Marcel Müller</a>. Thanks, Marcel, good idea!</p>
+<p>Making that topic more broad also allowed us to add more libraries to that area. <a href="/topics/auth/">Go check it out</a>.</p>
+<p>The second big change on the website is around logging: We've added slog (a structured logging facility) and a few remote logging implementations (sentry, airbrake) – very important tooling for every web developer!</p>
+<h2 id="more-learning">More Learning</h2>
+<p><em>Disclaimer: the author is co-organiser of RustFest.</em></p>
+<h3 id="connecting-rustfest-and-view-source">Connecting RustFest and View Source</h3>
+<p>More of a side note the <a href="http://www.rustfest.eu/blog/this-week-in-rustfest-7-first-talks-and-viewsource">RustFest team announced their collaboration with Mozilla sponsored &quot;View Source&quot;</a>, a conference dedicated to the open web. Within that side note, they announced to be hosting a discussion area about rust at View Source – reaching out to the web developer folks on their own turf. Despite not having announced any web-related talks at that conference, that's an important sign. I highly recommend to get in touch if you are interested making that discussion awesome.</p>
+<h3 id="more-blogs">More blogs</h3>
+<p>We've also seen a few more interesting blog posts about rust for web development and updates the main website accordingly:</p>
+<ul>
+<li><a href="http://lucumr.pocoo.org/2016/7/10/rust-rest/">Rust and Rest</a> (as previously mentioned)</li>
+<li><a href="https://gsquire.github.io/static/post/rest-in-rust/">REST in Rust</a></li>
+<li><a href="http://hermanradtke.com/2016/05/23/connecting-webservice-database-rust.html">Connecting a webservice to a database in Rust</a></li>
+</ul>
+<h3 id="arewewebyet-web-development-talk-at-berlin-rust-user-group">arewewebyet/web development talk at Berlin Rust User Group</h3>
+<p>And finally, you have the chance to see <a href="http://www.meetup.com/Rust-Berlin/events/232583152/">me on stage this week at Berlin Rust User Group</a>, trying to convince the folks in front of me to do web development with rust by implementing a tiny microservice with the help of arewewebyet. Come by and say hi!</p>
+<h2 id="crate-updates">Crate updates:</h2>
+<h3 id="added-to-index">Added to index:</h3>
+<p>The following have been added to our tracking index (and the website where appropriate)</p>
+<ul>
+<li><a href="https://crates.io/crates/airbrake">airbrake</a> (0.1.0)</li>
+<li><a href="https://crates.io/crates/brotli">brotli</a> (1.0.6)</li>
+<li><a href="https://crates.io/crates/catapult">catapult</a> (0.1.2)</li>
+<li><a href="https://crates.io/crates/frank_jwt">frank_jwt</a> (2.2.1)</li>
+<li><a href="https://crates.io/crates/horrorshow">horrorshow</a> (0.5.6)</li>
+<li><a href="https://crates.io/crates/macaroons">macaroons</a> (0.2.1)</li>
+<li><a href="https://crates.io/crates/otpauth">otpauth</a> (0.2.5)</li>
+<li><a href="https://crates.io/crates/slog">slog</a> (0.6.0)</li>
+<li><a href="https://crates.io/crates/sentry">sentry</a> (0.1.4)</li>
+<li><a href="https://crates.io/crates/zstd">zstd</a> (0.1.11)</li>
+</ul>
+<h3 id="updates-recorded">Updates recorded:</h3>
+<p>Further more we recorded new releases to the following crates</p>
+<ul>
+<li><a href="https://crates.io/crates/backtrace">backtrace</a> (0.2.1 =&gt; 0.2.3)</li>
+<li><a href="https://crates.io/crates/base64">base64</a> (0.1.1 =&gt; 0.2.0)</li>
+<li><a href="https://crates.io/crates/bodyparser">bodyparser</a> (0.3.0 =&gt; 0.4.0)</li>
+<li><a href="https://crates.io/crates/cassandra">cassandra</a> (0.6.10 =&gt; 0.7.2)</li>
+<li><a href="https://crates.io/crates/clap">clap</a> (2.5.1 =&gt; 2.9.3)</li>
+<li><a href="https://crates.io/crates/cookie">cookie</a> (0.2.4 =&gt; 0.2.5)</li>
+<li><a href="https://crates.io/crates/crust">crust</a> (0.14.0 =&gt; 0.16.1)</li>
+<li><a href="https://crates.io/crates/curl">curl</a> (0.2.19 =&gt; 0.3.1)</li>
+<li><a href="https://crates.io/crates/dbmigrate">dbmigrate</a> (0.2.3 =&gt; 0.2.4)</li>
+<li><a href="https://crates.io/crates/discord">discord</a> (0.5.0 =&gt; 0.6.0)</li>
+<li><a href="https://crates.io/crates/docopt">docopt</a> (0.6.80 =&gt; 0.6.81)</li>
+<li><a href="https://crates.io/crates/ease">ease</a> (0.4.2 =&gt; 0.5.0)</li>
+<li><a href="https://crates.io/crates/env_logger">env_logger</a> (0.3.3 =&gt; 0.3.4)</li>
+<li><a href="https://crates.io/crates/etcd">etcd</a> (0.5.3 =&gt; 0.5.4)</li>
+<li><em>feedreader</em> was renamed to <a href="https://crates.io/crates/feed">feed</a> (1.2.3)</li>
+<li><a href="https://crates.io/crates/fnv">fnv</a> (1.0.2 =&gt; 1.0.3)</li>
+<li><a href="https://crates.io/crates/formdata">formdata</a> (0.8.2 =&gt; 0.9.0)</li>
+<li><a href="https://crates.io/crates/ftp">ftp</a> (0.0.7 =&gt; 0.0.8)</li>
+<li><a href="https://crates.io/crates/googl">googl</a> (0.0.3 =&gt; 0.0.4)</li>
+<li><a href="https://crates.io/crates/handlebars-iron">handlebars-iron</a> (0.15.2 =&gt; 0.15.3)</li>
+<li><a href="https://crates.io/crates/handlebars">handlebars</a> (0.16.1 =&gt; 0.19.0)</li>
+<li><a href="https://crates.io/crates/hubcaps">hubcaps</a> (0.2.1 =&gt; 0.2.2)</li>
+<li><a href="https://crates.io/crates/hyper">hyper</a> (0.9.6 =&gt; 0.9.10)</li>
+<li><a href="https://crates.io/crates/imap">imap</a> (0.0.5 =&gt; 0.0.6)</li>
+<li><a href="https://crates.io/crates/influent">influent</a> (0.2.2 =&gt; 0.3.0)</li>
+<li><a href="https://crates.io/crates/iron">iron</a> (0.3.0 =&gt; 0.4.0)</li>
+<li><a href="https://crates.io/crates/iron_vhosts">iron_vhosts</a> (0.1.0 =&gt; 0.2.0)</li>
+<li><a href="https://crates.io/crates/json">json</a> (0.8.4 =&gt; 0.10.0)</li>
+<li><a href="https://crates.io/crates/json_macros">json_macros</a> (0.3.0 =&gt; 0.3.2)</li>
+<li><a href="https://crates.io/crates/jsonrpc">jsonrpc</a> (0.7.4 =&gt; 0.7.6)</li>
+<li><a href="https://crates.io/crates/kafka">kafka</a> (0.3.1 =&gt; 0.4.1)</li>
+<li><a href="https://crates.io/crates/libsodium-sys">libsodium-sys</a> (0.0.10 =&gt; 0.0.12)</li>
+<li><a href="https://crates.io/crates/liquid">liquid</a> (0.8.0 =&gt; 0.8.4)</li>
+<li><a href="https://crates.io/crates/log4rs">log4rs</a> (0.4.4 =&gt; 0.4.8)</li>
+<li><a href="https://crates.io/crates/maud">maud</a> (0.8.1 =&gt; 0.9.0)</li>
+<li><a href="https://crates.io/crates/mongo_driver">mongo_driver</a> (0.2.4 =&gt; 0.3.0)</li>
+<li><a href="https://crates.io/crates/mount">mount</a> (0.1.0 =&gt; 0.2.0)</li>
+<li><a href="https://crates.io/crates/mysql">mysql</a> (5.0.0 =&gt; 5.2.2)</li>
+<li><a href="https://crates.io/crates/openssl">openssl</a> (0.7.13 =&gt; 0.7.14)</li>
+<li><a href="https://crates.io/crates/pencil">pencil</a> (0.2.0 =&gt; 0.2.1)</li>
+<li><a href="https://crates.io/crates/persistent">persistent</a> (0.1.0 =&gt; 0.2.0)</li>
+<li><a href="https://crates.io/crates/pop3">pop3</a> (0.0.5 =&gt; 0.0.6)</li>
+<li><a href="https://crates.io/crates/postgres">postgres</a> (0.11.7 =&gt; 0.11.9)</li>
+<li><a href="https://crates.io/crates/random">random</a> (0.10.0 =&gt; 0.12.1)</li>
+<li><a href="https://crates.io/crates/redis">redis</a> (0.5.3 =&gt; 0.7.0)</li>
+<li><a href="https://crates.io/crates/regex">regex</a> (0.1.71 =&gt; 0.1.73)</li>
+<li><a href="https://crates.io/crates/requests">requests</a> (0.0.10 =&gt; 0.0.22)</li>
+<li><a href="https://crates.io/crates/rocksdb">rocksdb</a> (0.3.5 =&gt; 0.4.1)</li>
+<li><a href="https://crates.io/crates/rs-es">rs-es</a> (0.3.4 =&gt; 0.4.6)</li>
+<li><a href="https://crates.io/crates/rusoto">rusoto</a> (0.13.1 =&gt; 0.15.3)</li>
+<li><a href="https://crates.io/crates/rusqlite">rusqlite</a> (0.7.2 =&gt; 0.7.3)</li>
+<li><a href="https://crates.io/crates/rustache">rustache</a> (0.0.1 =&gt; 0.0.2)</li>
+<li><a href="https://crates.io/crates/rustful">rustful</a> (0.8.0 =&gt; 0.9.0)</li>
+<li><a href="https://crates.io/crates/rustorm">rustorm</a> (0.4.3 =&gt; 0.5.4)</li>
+<li><a href="https://crates.io/crates/serde">serde</a> (0.7.5 =&gt; 0.8.0-rc3)</li>
+<li><a href="https://crates.io/crates/serde_json">serde_json</a> (0.7.0 =&gt; 0.7.4)</li>
+<li><a href="https://crates.io/crates/syndication">syndication</a> (0.1.1 =&gt; 0.2.0)</li>
+<li><a href="https://crates.io/crates/syslog">syslog</a> (3.1.0 =&gt; 3.2.0)</li>
+<li><a href="https://crates.io/crates/tar">tar</a> (0.4.5 =&gt; 0.4.7)</li>
+<li><a href="https://crates.io/crates/tempfile">tempfile</a> (2.1.3 =&gt; 2.1.4)</li>
+<li><a href="https://crates.io/crates/tera">tera</a> (0.1.1 =&gt; 0.1.2)</li>
+<li><a href="https://crates.io/crates/tiny-http">tiny-http</a> (0.5.1 =&gt; 0.5.2)</li>
+<li><a href="https://crates.io/crates/url">url</a> (1.1.0 =&gt; 1.1.1)</li>
+<li><a href="https://crates.io/crates/urlencoded">urlencoded</a> (0.3.0 =&gt; 0.4.0)</li>
+<li><a href="https://crates.io/crates/ws">ws</a> (0.4.7 =&gt; 0.5.1)</li>
+<li><a href="https://crates.io/crates/yup-oauth2">yup-oauth2</a> (0.6.1 =&gt; 0.6.2)</li>
+</ul>
+<p>Anything we missed? <a href="https://github.com/bashyHQ/arewewebyet/issues/new">Let us know</a>!</p>
+
+  </blockquote>
+  
+</div>
+
+
+
+
+<section class="authors">
+  <h3>Author</h3>
+  
+<div class="author" id="ben">
+  
+  <a href="/curators/#ben">
+    
+
+    <img class="avatar" src="http:&#x2F;&#x2F;www.create-build-execute.com&#x2F;assets&#x2F;images&#x2F;ben.png" />
+    <span class="name">Benjamin Kampmann</span>
+    <p class="social-media">
+      
+      <a href="http:&#x2F;&#x2F;www.create-build-execute.com" target="_blank"><i class="fa fa-home"></i></a>
+      
+
+      
+      <a href="https://www.github.com/ligthyear" target="_blank"><i class="fa fa-github"></i></a>
+      
+
+      
+      <a href="https://www.twitter.com/SirDonQui" target="_blank"><i class="fa fa-twitter"></i></a>
+      
+    </p>
+
+    
+    <p class="bio">
+      Freelance OpenSource Software Architect and Developer. I design, build and supervise the building of software (systems). Sometimes for clients, often times on my own, whenever possible as OpenSource. I care about good design in both, the User Experience and backend architecture and infrastructure. And I write about all this stuff.
+    </p>
+    
+
+    
+  </a>
+  
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Introducing Pencil: A Microframework Inspired By Flask For Rust » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<div class="news">
+
+
+  <h1>Introducing Pencil: A Microframework Inspired By Flask For Rust</h1>
+
+  <div class="meta">
+    Published 2016-03-08 
+  </div>
+
+
+  
+  <blockquote class="">
+    <cite>
+
+      Posted
+      
+      on <a href="https:&#x2F;&#x2F;fengsp.github.io&#x2F;blog&#x2F;2016&#x2F;3&#x2F;introducing-pencil&#x2F;">Shipeng Feng&#x27;s blog</a>
+      
+
+      
+      by <span class="name">Shipeng Feng (_fengsp)</a>
+       :
+    </cite>
+    <h2 id="a-minimal-application">A Minimal Application</h2>
+<pre><code>extern crate pencil;
+
+use pencil::{Pencil, Request, Response, PencilResult};
+
+fn hello(_: &amp;mut Request) -&gt; PencilResult {
+    Ok(Response::from(&quot;Hello World!&quot;))
+}
+
+fn main() {
+    let mut app = Pencil::new(&quot;/web/hello&quot;);
+    app.get(&quot;/&quot;, &quot;hello&quot;, hello);
+    app.run(&quot;127.0.0.1:5000&quot;);
+}
+</code></pre>
+<h2 id="routing">Routing</h2>
+<pre><code>fn user(r: &amp;mut Request) -&gt; PencilResult {
+    let user_id = r.view_args.get(&quot;user_id&quot;).unwrap();
+    Ok(format!(&quot;user {}&quot;, user_id).into())
+}
+
+fn main() {
+    // app here
+    app.get(&quot;/user/&lt;user_id:int&gt;&quot;, &quot;user&quot;, user);
+}
+</code></pre>
+<h2 id="json-handling">JSON Handling</h2>
+<pre><code>use std::collections::BTreeMap;
+use pencil::jsonify;
+
+fn app_info(_: &amp;mut Request) -&gt; PencilResult {
+    let mut d = BTreeMap::new();
+    d.insert(&quot;name&quot;, &quot;hello&quot;);
+    d.insert(&quot;version&quot;, &quot;0.1.0&quot;);
+    return jsonify(&amp;d);
+}
+
+fn main() {
+    // app here
+    app.get(&quot;/info&quot;, &quot;app_info&quot;, app_info);
+}
+</code></pre>
+<h2 id="error-handling">Error Handling</h2>
+<pre><code>use pencil::HTTPError;
+
+fn page_not_found(_: HTTPError) -&gt; PencilResult {
+    let mut response = Response::from(&quot;Customized 404 :)&quot;);
+    response.status_code = 404;
+    Ok(response)
+}
+
+fn main() {
+    // app here
+    app.httperrorhandler(404, page_not_found);
+}
+</code></pre>
+<h2 id="static-files">Static Files</h2>
+<p>Just create the static folder under your application root path, it just works.
+Now you can visit http://localhost:5000/static/example.png and get your file.
+You can customize the static folder and static url path.</p>
+<pre><code>fn main() {
+    // app here
+    app.enable_static_file_handling();
+}
+</code></pre>
+<h2 id="templating">Templating</h2>
+<p>Just create the templates folder under your application root path, it just works.
+You can customize the template folder.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;
+      Hello {{ name }}!
+    &lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code>fn hello_template(request: &amp;mut Request) -&gt; PencilResult {
+    let mut context = BTreeMap::new();
+    context.insert(&quot;name&quot;.to_string(), &quot;template&quot;.to_string());
+    return request.app.render_template(&quot;hello.html&quot;, &amp;context);
+}
+
+fn main() {
+    // app here
+    app.register_template(&quot;hello.html&quot;);
+    app.get(&quot;/hello_template&quot;, &quot;hello_template&quot;, hello_template);
+}
+</code></pre>
+<h2 id="logging">Logging</h2>
+<pre><code>#[macro_use] extern crate log;
+extern crate env_logger;
+
+fn main() {
+    // app here
+    app.set_debug(true);
+    app.set_log_level();
+    env_logger::init().unwrap();
+    debug!(&quot;* Running on http://localhost:5000/&quot;);
+    app.run(&quot;127.0.0.1:5000&quot;);
+}
+</code></pre>
+<h2 id="redirects-and-errors">Redirects And Errors</h2>
+<pre><code>use pencil::{redirect, abort};
+
+fn github(_: &amp;mut Request) -&gt; PencilResult {
+    return redirect(&quot;https://github.com/&quot;, 302);
+}
+
+fn login(_: &amp;mut Request) -&gt; PencilResult {
+    return abort(401);
+}
+
+fn main() {
+    // app here
+    app.get(&quot;/github&quot;, &quot;github&quot;, github);
+    app.get(&quot;/login&quot;, &quot;login&quot;, login);
+}
+</code></pre>
+<h2 id="request-and-response-objects">Request And Response Objects</h2>
+<p>They are really easy to use, check docs for more details.</p>
+<pre><code>fn search(request: &amp;mut Request) -&gt; PencilResult {
+    let keyword = match request.args().get(&quot;q&quot;) {
+        Some(q) =&gt; q as &amp;str,
+        None =&gt; &quot;&quot;,
+    };
+    Ok(Response::from(format!(&quot;You are searching for {}&quot;, keyword)))
+}
+
+fn main() {
+    // app here
+    app.get(&quot;/search&quot;, &quot;search&quot;, search);
+}
+</code></pre>
+<h2 id="before-after-request">Before/After Request</h2>
+<pre><code>extern crate typemap;
+
+use typemap::Key;
+
+struct KeyType;
+struct Value(i32);
+impl Key for KeyType { type Value = Value; }
+
+fn before_request(request: &amp;mut Request) -&gt; Option&lt;PencilResult&gt; {
+    request.extensions_data.insert::&lt;KeyType&gt;(Value(100));
+    None
+}
+
+fn main() {
+    // app here
+    app.before_request(before_request);
+}
+</code></pre>
+<h2 id="modular-applications">Modular Applications</h2>
+<pre><code>use pencil::method::Get;
+use pencil::Module;
+
+fn hi_module(_: &amp;mut Request) -&gt; PencilResult {
+    Ok(&quot;Hi module.&quot;.into())
+}
+
+fn main() {
+    // app here
+    let mut demo_module = Module::new(&quot;demo&quot;, &quot;/web/hello/demo&quot;);
+    demo_module.route(&quot;/demo/hi&quot;, &amp;[Get], &quot;hi&quot;, hi_module);
+    app.register_module(demo_module);
+}
+</code></pre>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://github.com/fengsp/pencil">Project Home</a></li>
+<li><a href="http://fengsp.github.io/pencil/">Documentation</a></li>
+<li><a href="https://crates.io/crates/pencil/">Crates.io</a></li>
+</ul>
+<p>Have fun!</p>
+
+  </blockquote>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

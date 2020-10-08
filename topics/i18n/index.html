@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Internationalisation » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<h1>Internationalisation 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</h1>
+
+
+  <p>Internationalisation is still very immature and unstable, with most libraries being only weeks old and not used in production yet. In terms of i18n-ized message formatting, current options are gettext, fluent and ICU MessageFormat (via <code>rust_icu</code>).</p>
+
+
+
+
+
+
+  
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-fluent-locale" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-10-07, last updated: 2018-08-06">fluent-locale</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/fluent-locale"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="http:&#x2F;&#x2F;projectfluent.org&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;projectfluent&#x2F;fluent-locale-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-fluent-locale"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/fluent-locale.svg" />
+    <img src="https://img.shields.io/crates/d/fluent-locale.svg" />
+    <img src="https://img.shields.io/crates/l/fluent-locale.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A library for parsing, serializing, manipulating and negotiating locales and language tags.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-fluent" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-01-17, last updated: 2018-10-15">fluent</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/fluent"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="http:&#x2F;&#x2F;www.projectfluent.org"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;projectfluent&#x2F;fluent-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-fluent"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/fluent.svg" />
+    <img src="https://img.shields.io/crates/d/fluent.svg" />
+    <img src="https://img.shields.io/crates/l/fluent.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A localization library designed to unleash the entire expressive power of
+natural language translations.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-gettext" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-02-09, last updated: 2018-11-14">gettext</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/gettext"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;justinas&#x2F;gettext"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-gettext"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/gettext.svg" />
+    <img src="https://img.shields.io/crates/d/gettext.svg" />
+    <img src="https://img.shields.io/crates/l/gettext.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An implementation of Gettext translation framework for Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-gettext-rs" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-02-02, last updated: 2018-08-17">gettext-rs</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/gettext-rs"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;Koka&#x2F;gettext-rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="http:&#x2F;&#x2F;koka.github.io&#x2F;gettext-rs&#x2F;gettextrs&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Koka&#x2F;gettext-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-gettext-rs"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/gettext-rs.svg" />
+    <img src="https://img.shields.io/crates/d/gettext-rs.svg" />
+    <img src="https://img.shields.io/crates/l/gettext-rs.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    GNU Gettext FFI binding for Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-intl_pluralrules" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-07-30, last updated: 2019-01-07">intl_pluralrules</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/intl_pluralrules"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;unclenachoduh&#x2F;pluralrules"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-intl_pluralrules"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/intl_pluralrules.svg" />
+    <img src="https://img.shields.io/crates/d/intl_pluralrules.svg" />
+    <img src="https://img.shields.io/crates/l/intl_pluralrules.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A plural rule categorizer for numeric input.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-unic" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-06-20, last updated: 2019-01-02">unic</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/unic"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;open-i18n&#x2F;rust-unic&#x2F;"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-unic"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/unic.svg" />
+    <img src="https://img.shields.io/crates/d/unic.svg" />
+    <img src="https://img.shields.io/crates/l/unic.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    UNIC: Unicode and Internationalization Crates
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-rust_icu" class="pkg">
+  <span class="pkg-name"
+    title="est. 2020-04-23, last updated: 2020-04-23">rust_icu</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rust_icu"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;rust_icu"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-rust_icu"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rust_icu.svg" />
+    <img src="https://img.shields.io/crates/d/rust_icu.svg" />
+    <img src="https://img.shields.io/crates/l/rust_icu.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Native bindings to the ICU4C library from Unicode.
+
+  </p>
+</li>
+
+
+  
+</ul>
+
+
+
+
+
+
+<h3>Still missing...</h3>
+<ul>
+  
+  <li> <p>a proper <a href="https://github.com/rust-lang/rfcs/issues/858">ECMA 402 Intl Implementation</a></p>
+ </li>
+  
+  <li>
+    and probably some others...
+  </li>
+</ul>
+
+
+
+
+<div class="alert-box">
+  <h3>Do you know something we don't?</h3>
+  <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a
+      href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+  </p>
+</div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Database drivers » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<h1>Database drivers 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+</h1>
+
+
+  <p>Proper Database support is crucial for modern web development. This page gives an overview of the various drivers, ORMs, integrations and tools.</p>
+
+
+
+<h2 id="drivers">Drivers</h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-mysql" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-24, last updated: 2018-12-21">mysql</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/mysql"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;mysql"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;blackbeam&#x2F;rust-mysql-simple"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-mysql"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/mysql.svg" />
+    <img src="https://img.shields.io/crates/d/mysql.svg" />
+    <img src="https://img.shields.io/crates/l/mysql.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Mysql client library implemented in rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-mysql_async" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-11-08, last updated: 2019-06-11">mysql_async</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/mysql_async"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;mysql_async"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;blackbeam&#x2F;mysql_async"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-mysql_async"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/mysql_async.svg" />
+    <img src="https://img.shields.io/crates/d/mysql_async.svg" />
+    <img src="https://img.shields.io/crates/l/mysql_async.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Tokio based asynchronous MySql client library.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-postgres" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-24, last updated: 2018-02-12">postgres</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/postgres"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;postgres&#x2F;0.15.1&#x2F;postgres"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sfackler&#x2F;rust-postgres"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-postgres"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/postgres.svg" />
+    <img src="https://img.shields.io/crates/d/postgres.svg" />
+    <img src="https://img.shields.io/crates/l/postgres.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A native PostgreSQL driver
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-pleingres" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-05-02, last updated: 2018-12-24">pleingres</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/pleingres"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;nest.pijul.com&#x2F;pmeunier&#x2F;pleingres"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;pleingres"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;nest.pijul.com&#x2F;pmeunier&#x2F;pleingres"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-pleingres"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/pleingres.svg" />
+    <img src="https://img.shields.io/crates/d/pleingres.svg" />
+    <img src="https://img.shields.io/crates/l/pleingres.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A pure Rust interface to PostgreSQL. Will never block (hence the name, a pun on that fact in french).
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-redis" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-21, last updated: 2018-09-10">redis</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/redis"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;mitsuhiko&#x2F;redis-rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;redis"><i class="fa fa-book"></i></a>
+  
+
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-redis"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/redis.svg" />
+    <img src="https://img.shields.io/crates/d/redis.svg" />
+    <img src="https://img.shields.io/crates/l/redis.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Redis driver for Rust.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-redis-async" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-06-22, last updated: 2019-08-22">redis-async</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/redis-async"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;benashford&#x2F;redis-async-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-redis-async"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/redis-async.svg" />
+    <img src="https://img.shields.io/crates/d/redis-async.svg" />
+    <img src="https://img.shields.io/crates/l/redis-async.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An asynchronous futures based Redis client for Rust using Tokio
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-darkredis" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-07-26, last updated: 2019-09-23">darkredis</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/darkredis"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Bunogi&#x2F;darkredis"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-darkredis"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/darkredis.svg" />
+    <img src="https://img.shields.io/crates/d/darkredis.svg" />
+    <img src="https://img.shields.io/crates/l/darkredis.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Async Redis client using std::future
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-rusqlite" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-21, last updated: 2018-12-16">rusqlite</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rusqlite"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="http:&#x2F;&#x2F;docs.rs&#x2F;rusqlite&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;jgallagher&#x2F;rusqlite"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-rusqlite"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rusqlite.svg" />
+    <img src="https://img.shields.io/crates/d/rusqlite.svg" />
+    <img src="https://img.shields.io/crates/l/rusqlite.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Ergonomic wrapper for SQLite
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-tokio-postgres" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-26, last updated: 2019-10-15">tokio-postgres</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tokio-postgres"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sfackler&#x2F;rust-postgres"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-tokio-postgres"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tokio-postgres.svg" />
+    <img src="https://img.shields.io/crates/d/tokio-postgres.svg" />
+    <img src="https://img.shields.io/crates/l/tokio-postgres.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A native, asynchronous PostgreSQL client
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-leveldb" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-20, last updated: 2017-09-20">leveldb</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/leveldb"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;skade&#x2F;leveldb"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="http:&#x2F;&#x2F;skade.github.io&#x2F;leveldb&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;skade&#x2F;leveldb"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-leveldb"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/leveldb.svg" />
+    <img src="https://img.shields.io/crates/d/leveldb.svg" />
+    <img src="https://img.shields.io/crates/l/leveldb.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An interface for leveldb
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-rocksdb" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-29, last updated: 2019-01-10">rocksdb</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rocksdb"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;spacejam&#x2F;rust-rocksdb"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-rocksdb"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rocksdb.svg" />
+    <img src="https://img.shields.io/crates/d/rocksdb.svg" />
+    <img src="https://img.shields.io/crates/l/rocksdb.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Rust wrapper for Facebook&#x27;s RocksDB embeddable database
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-couchdb" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-09-05, last updated: 2017-07-17">couchdb</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/couchdb"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;couchdb-rs.github.io&#x2F;couchdb&#x2F;doc&#x2F;v0.6.0&#x2F;couchdb&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;couchdb-rs&#x2F;couchdb"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-couchdb"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/couchdb.svg" />
+    <img src="https://img.shields.io/crates/d/couchdb.svg" />
+    <img src="https://img.shields.io/crates/l/couchdb.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    The couchdb library provides types for working with CouchDB.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-etcd" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-04-11, last updated: 2018-12-15">etcd</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/etcd"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;jimmycuadra&#x2F;rust-etcd"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;etcd"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;jimmycuadra&#x2F;rust-etcd"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-etcd"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/etcd.svg" />
+    <img src="https://img.shields.io/crates/d/etcd.svg" />
+    <img src="https://img.shields.io/crates/l/etcd.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A client library for CoreOS&#x27;s etcd.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-influent" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-08-30, last updated: 2018-11-03">influent</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/influent"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="http:&#x2F;&#x2F;gobwas.github.io&#x2F;influent.rs&#x2F;influent&#x2F;index.html"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;gobwas&#x2F;influent.rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-influent"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/influent.svg" />
+    <img src="https://img.shields.io/crates/d/influent.svg" />
+    <img src="https://img.shields.io/crates/l/influent.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    InfluxDB Rust driver
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-cassandra-cpp" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-06-29, last updated: 2019-01-08">cassandra-cpp</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/cassandra-cpp"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;cassandra-cpp"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Metaswitch&#x2F;cassandra-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-cassandra-cpp"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/cassandra-cpp.svg" />
+    <img src="https://img.shields.io/crates/d/cassandra-cpp.svg" />
+    <img src="https://img.shields.io/crates/l/cassandra-cpp.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A Cassandra CQL driver, built on top of the DataStax C++ driver for performance and functionality.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-cdrs" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-07, last updated: 2019-05-16">cdrs</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/cdrs"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;AlexPikalov&#x2F;cdrs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;cdrs"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;AlexPikalov&#x2F;cdrs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-cdrs"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/cdrs.svg" />
+    <img src="https://img.shields.io/crates/d/cdrs.svg" />
+    <img src="https://img.shields.io/crates/l/cdrs.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Cassandra DB driver written in Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-memcache" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-21, last updated: 2019-06-30">memcache</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/memcache"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;aisk&#x2F;rust-memcache"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-memcache"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/memcache.svg" />
+    <img src="https://img.shields.io/crates/d/memcache.svg" />
+    <img src="https://img.shields.io/crates/l/memcache.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    memcached client for rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-mongodb" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-22, last updated: 2018-11-16">mongodb</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/mongodb"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;mongodb"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;mongodb-labs&#x2F;mongo-rust-driver-prototype"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-mongodb"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/mongodb.svg" />
+    <img src="https://img.shields.io/crates/d/mongodb.svg" />
+    <img src="https://img.shields.io/crates/l/mongodb.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A native MongoDB driver developed under MongoDB labs.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-mongo_driver" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-12-19, last updated: 2018-05-16">mongo_driver</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/mongo_driver"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;mongo_driver&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;thijsc&#x2F;mongo-rust-driver"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-mongo_driver"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/mongo_driver.svg" />
+    <img src="https://img.shields.io/crates/d/mongo_driver.svg" />
+    <img src="https://img.shields.io/crates/l/mongo_driver.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Mongo Rust driver built on top of the Mongo C driver
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-sqlx" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-06-06, last updated: 2020-07-27">sqlx</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/sqlx"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;sqlx"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-sqlx"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/sqlx.svg" />
+    <img src="https://img.shields.io/crates/d/sqlx.svg" />
+    <img src="https://img.shields.io/crates/l/sqlx.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="orms">ORMs</h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-diesel" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-11-29, last updated: 2018-09-12">diesel</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/diesel"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;diesel.rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;diesel&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;diesel-rs&#x2F;diesel"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-diesel"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/diesel.svg" />
+    <img src="https://img.shields.io/crates/d/diesel.svg" />
+    <img src="https://img.shields.io/crates/l/diesel.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A safe, extensible ORM and Query Builder for PostgreSQL, SQLite, and MySQL
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-quaint" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-12-27, last updated: 2020-03-26">quaint</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/quaint"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;prisma&#x2F;quaint&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;quaint&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;prisma&#x2F;quaint&#x2F;"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-quaint"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/quaint.svg" />
+    <img src="https://img.shields.io/crates/d/quaint.svg" />
+    <img src="https://img.shields.io/crates/l/quaint.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An abstraction layer for SQL databases.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-rustorm" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-22, last updated: 2018-11-19">rustorm</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/rustorm"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;rustorm"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;ivanceras&#x2F;rustorm"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-rustorm"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/rustorm.svg" />
+    <img src="https://img.shields.io/crates/d/rustorm.svg" />
+    <img src="https://img.shields.io/crates/l/rustorm.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A complete rewrite of rustorm
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-tql" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-12-30, last updated: 2018-02-10">tql</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/tql"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="http:&#x2F;&#x2F;tql.tuxfamily.org&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;antoyo&#x2F;tql"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-tql"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/tql.svg" />
+    <img src="https://img.shields.io/crates/d/tql.svg" />
+    <img src="https://img.shields.io/crates/l/tql.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Compile-time ORM (runtime library)
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="pools">Connection pools</h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-mobc" class="pkg">
+  <span class="pkg-name"
+    title="est. 2019-10-29, last updated: 2020-03-27">mobc</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/mobc"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;mobc&#x2F;latest&#x2F;mobc&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;importcjj&#x2F;mobc"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-mobc"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/mobc.svg" />
+    <img src="https://img.shields.io/crates/d/mobc.svg" />
+    <img src="https://img.shields.io/crates/l/mobc.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A generic connection pool with async&#x2F;await support
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-r2d2" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-22, last updated: 2019-12-25">r2d2</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/r2d2"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;sfackler&#x2F;r2d2"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-r2d2"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/r2d2.svg" />
+    <img src="https://img.shields.io/crates/d/r2d2.svg" />
+    <img src="https://img.shields.io/crates/l/r2d2.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A generic connection pool
+  </p>
+</li>
+
+
+  
+</ul>
+<h2 id="tooling">Tooling</h2>
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-migrant" class="pkg">
+  <span class="pkg-name"
+    title="est. 2016-12-21, last updated: 2018-12-22">migrant</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/migrant"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;jaemk&#x2F;migrant"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-migrant"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/migrant.svg" />
+    <img src="https://img.shields.io/crates/d/migrant.svg" />
+    <img src="https://img.shields.io/crates/l/migrant.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    CLI Database migration management for postgres, sqlite, mysql
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-refinery" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-11-22, last updated: 2019-12-21">refinery</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/refinery"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;refinery&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;rust-db&#x2F;refinery"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-refinery"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/refinery.svg" />
+    <img src="https://img.shields.io/crates/d/refinery.svg" />
+    <img src="https://img.shields.io/crates/l/refinery.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Powerful SQL migration toolkit for Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-schemamama" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-04-06, last updated: 2018-04-19">schemamama</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/schemamama"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;SkylerLipthay&#x2F;schemamama"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-schemamama"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/schemamama.svg" />
+    <img src="https://img.shields.io/crates/d/schemamama.svg" />
+    <img src="https://img.shields.io/crates/l/schemamama.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A lightweight database schema migration system
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-trek" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-09-20, last updated: 2018-01-21">trek</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/trek"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;starim.github.io&#x2F;trek&#x2F;trek&#x2F;index.html"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;starim.github.io&#x2F;trek&#x2F;trek&#x2F;index.html"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;starim&#x2F;trek"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-trek"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/trek.svg" />
+    <img src="https://img.shields.io/crates/d/trek.svg" />
+    <img src="https://img.shields.io/crates/l/trek.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Database migration management for Rust programs
+  </p>
+</li>
+
+
+  
+</ul>
+
+
+
+
+
+
+
+
+
+
+<div class="alert-box">
+  <h3>Do you know something we don't?</h3>
+  <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a
+      href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+  </p>
+</div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

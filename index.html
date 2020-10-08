@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Are we web yet? You can build stuff!</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<div class="github-fork-ribbon-wrapper left">
+  <div class="github-fork-ribbon">
+    <a href="https://github.com/rust-lang/arewewebyet">Contribute on GitHub</a>
+  </div>
+</div>
+
+<div id="main">
+  <h1>Are we <em>web</em> yet?</h1>
+  
+  <p><strong>Yes! And it's freaking fast!</strong></p>
+  
+  <h2>Can I replace my Rails/Django/Flask already?</h2>
+  
+  <p>
+    <strong>Yup!</strong> 
+    Rust has mature and production ready frameworks in <a href="/topics/frameworks/#pkg-actix-web">Actix Web</a> and 
+    <a href="/topics/frameworks/#pkg-rocket">Rocket</a>, and newer ones like <a href="/topics/frameworks/#pkg-warp">Warp</a> 
+    and <a href="/topics/frameworks/#pkg-tide">Tide</a>. These provide everything you’d expect from a web framework, from routing 
+    and middleware, to templating, and JSON/form handling. There are crates for everything, and more! For databases, there’s:</p>
+  
+  <ul>
+    <li>
+      <a href="/topics/database/#pkg-diesel">Diesel</a>, a full-fledged ORM.
+    </li>
+    <li>
+      <a href="/topics/database/#pkg-sqlx">sqlx</a>, the async sql toolkit.
+    </li>
+    <li>
+      As well as native drivers for <a href="/topics/database/#pkg-mongo">MongoDB</a>, <a
+        href="/topics/database/#pkg-rusqlite">SQlite</a>, <a href="/topics/database/#pkg-postgres">Postgres</a>, and <a
+        href="/topics/database/#pkg-mysql">MySQL</a>.
+    </li>
+  </ul>
+  
+  There are many integrations to third-party services, such as: 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  
+  <ul>
+    <li>
+      <a href="/topics/services/#pkg-rusoto">Rusoto</a> (AWS)
+    </li>
+    <li>
+      <a href="/topics/services/#pkg-azure_sdk_for_rust">Azure</a>
+    </li>
+    <li>
+      <a href="/topics/services/#pkg-redis">Redis</a>
+    </li>
+    <li>
+      <a href="/topics/services/#pkg-elasticsearch">Elasticsearch</a>
+    </li>
+  </ul>
+  
+  <p>And of course, there is plenty of support for basic web needs, like <a href="/topics/logging/">logging</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+, <a href="/topics/auth/">authorization</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+, <a
+      href="/topics/templating/">templating</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+, and <a href="/topics/email/">email</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+.</p>
+  
+  While development might not be as smooth as something like Rails or Django, the Rust web development ecosystem and
+  community is engaged and very helpful. A lot of work has been put into the web in the past few years, and we're getting
+  there!
+  
+  <h2>WebAssembly???</h2>
+  
+  <p>Rust can even run on the browser, by compiling to <a href="/topics/webassembly/">WebAssembly</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+. This means that you can take advantage of the amazing Rust ecosystem on the browser! Rust and
+    WebAssembly integrate with existing Javascript tooling. It supports NPM, Webpack, and ECMAScript modules! There are
+    some <a href="/topics/webassembly/">awesome Rust and WebAssembly</a> projects out there. For example, <a
+      href="https://github.com/yewstack/yew">Yew</a> and <a href="https://github.com/seed-rs/seed">Seed</a> let you create
+    front-end web apps with Rust in a way that feels almost like React.js.</p>
+  
+  <p>For more information about Rust and WebAssembly, check out the <a
+      href="https://rustwasm.github.io/docs/book/introduction.html">Rust and WebAssembly Book</a>.</p>
+  
+  <h2>Getting started</h2>
+  
+  <p>After you’ve set up your Rust and worked yourself <a href="https://doc.rust-lang.org/book/">through “The Book”</a>,
+    you might want to check any of these resources:</p>
+  
+  <ul>
+    <li><a href="https://blog.logrocket.com/rust-web-apps-using-rocket-framework/">Building web apps with Rust using the
+        Rocket framework</a></li>
+    <li><a
+        href="https://www.youtube.com/watch?v=yNe9Xr35n4Q&amp;list=PL8lUUBadSMNBNKMYJpUE830tBiN6bxVRw&amp;ab_channel=DavidPedersen">Educational
+        Rust Live Coding - Web App From Scratch</a></li>
+    <li><a href="https://gill.net.in/posts/auth-microservice-rust-actix-web1.0-diesel-complete-tutorial/">Actix-Web Auth
+        Microservice</a></li>
+    <li><a href="https://dev.to/werner/practical-rust-web-development-api-rest-29g1">Practical Rust Web Development
+        (Series)</a></li>
+    <li><a href="https://auth0.com/blog/build-an-api-in-rust-with-jwt-authentication-using-actix-web/">Build an API in
+        Rust with JWT Authentication</a></li>
+    <li><a href="https://rocket.rs/v0.4/guide/quickstart/">Rocket Quickstart</a></li>
+  </ul>
+  
+  <p>If you find yourself stuck and looking for help, you can check out the <a
+      href="https://users.rust-lang.org/c/help">official Rust forum</a>, the <a
+      href="https://stackoverflow.com/questions/tagged/rust">rust tag on stackoverflow</a>, or the <a
+      href="https://discord.com/invite/rust-lang">Rust Discord server</a> where you are welcome to post your questions and
+    will find excellent help.</p>
+
+  <h2>In detail</h2>
+  
+  <p>Learn more about the state of web development in Rust by topic:</p>
+
+  <ul class="topic-list">
+    
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;asyncio&#x2F;">Async I&#x2F;O</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;auth&#x2F;">Authorization&#x2F;Authentication</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;binary-protocols&#x2F;">Binary protocols</a> 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;browser&#x2F;">Browser</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;clients&#x2F;">HTTP Clients</a> 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;cms&#x2F;">CMS</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;compression&#x2F;">Compression Libs</a> 
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;crypto&#x2F;">Crypto</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;database&#x2F;">Database drivers</a> 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;deploy&#x2F;">Deploying</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;email&#x2F;">Email</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;encoding&#x2F;">En- &amp; Decoding</a> 
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;frameworks&#x2F;">Web Development Frameworks</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;i18n&#x2F;">Internationalisation</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;json&#x2F;">JSON Support</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;logging&#x2F;">Logging</a> 
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;nodejs&#x2F;">Node.js&#x2F;Electron</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;serializer&#x2F;">Serializers</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;services&#x2F;">External Services</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;soap&#x2F;">SOAP</a> 
+<span class="level-indicator level-6"  title="basically non-existent" >
+ <i class="fa fa-times-circle"></i>  </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;stack&#x2F;">Lower Web-Stack</a> 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;syndication&#x2F;">Syndication&#x2F;RSS</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;templating&#x2F;">Templating</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;utils&#x2F;">Web Utils</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;wasm-runtimes&#x2F;">WebAssembly runtimes</a> 
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;web-apis&#x2F;">External Web APIs</a> 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</li>
+    
+    <li><a href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;topics&#x2F;webassembly&#x2F;">WebAssembly</a> 
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+</li>
+    
+  </ul>
+  
+  <ul class="legend">
+    <li>
+<span class="level-indicator level-0"  title="everything is awesome: stable, tested and mature" >
+ <i class="fa fa-check-circle"></i>
+ </span>
+: everything is awesome<a href="https://www.youtube.com/watch?v=9cQgQIMlwWw"
+        target="_blank">™</a>: stable, tested and mature</li>
+    <li>
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+: stuff's pretty great</li>
+    <li>
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+: getting there, stable but still maturing</li>
+    <li>
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+: not yet stable, but progressing</li>
+    <li>
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+: unstable/incomplete, needs work</li>
+    <li>
+<span class="level-indicator level-5"  title="barely there, needs serious work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+: barely there, needs serious work</li>
+    <li>
+<span class="level-indicator level-6"  title="basically non-existent" >
+ <i class="fa fa-times-circle"></i>  </span>
+: basically nonexistent</li>
+  </ul>
+</div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

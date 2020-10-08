@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Authorization&#x2F;Authentication » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<h1>Authorization&#x2F;Authentication 
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+</h1>
+
+
+  <p>Authorization and Authentication are a big deal for web development. Take OAuth, the most widely used protocol of authentication between services on the web. Such an simple idea, but with so many varying implementations (twitter, facebook, whatever...) and tricky parts in the details – it's almost impossible to get right without a library. But authentication doesn't end there, how do people authorize against your server? How do you authenticate? These are crates helping you to address authentication problems.</p>
+
+
+
+
+
+
+  
+<ul class="pkg-list">
+  
+  
+
+
+
+<li id="pkg-cookie" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-11-22, last updated: 2018-07-25">cookie</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/cookie"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;cookie"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;alexcrichton&#x2F;cookie-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-cookie"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/cookie.svg" />
+    <img src="https://img.shields.io/crates/d/cookie.svg" />
+    <img src="https://img.shields.io/crates/l/cookie.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Crate for parsing HTTP cookie headers and managing a cookie jar. Supports signed
+and private (encrypted + signed) jars.
+
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-jsonwebtoken" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-11-02, last updated: 2020-06-30">jsonwebtoken</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/jsonwebtoken"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;jsonwebtoken"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;jsonwebtoken"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-jsonwebtoken"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/jsonwebtoken.svg" />
+    <img src="https://img.shields.io/crates/d/jsonwebtoken.svg" />
+    <img src="https://img.shields.io/crates/l/jsonwebtoken.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Create and decode JWTs in a strongly typed way.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-oauth2" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-12-16, last updated: 2019-01-14">oauth2</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/oauth2"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;ramosbugs&#x2F;oauth2-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-oauth2"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/oauth2.svg" />
+    <img src="https://img.shields.io/crates/d/oauth2.svg" />
+    <img src="https://img.shields.io/crates/l/oauth2.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Bindings for exchanging OAuth 2 tokens
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-oauth-client" class="pkg">
+  <span class="pkg-name"
+    title="est. 2014-12-28, last updated: 2018-08-16">oauth-client</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/oauth-client"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;gifnksm&#x2F;oauth-client-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-oauth-client"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/oauth-client.svg" />
+    <img src="https://img.shields.io/crates/d/oauth-client.svg" />
+    <img src="https://img.shields.io/crates/l/oauth-client.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    OAuth client for Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-oxide-auth" class="pkg">
+  <span class="pkg-name"
+    title="est. 2017-11-29, last updated: 2018-12-26">oxide-auth</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/oxide-auth"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;HeroicKatora&#x2F;oxide-auth.git"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-oxide-auth"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/oxide-auth.svg" />
+    <img src="https://img.shields.io/crates/d/oxide-auth.svg" />
+    <img src="https://img.shields.io/crates/l/oxide-auth.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    A OAuth2 server library, for actix, gotham or other libraries, featuring a set of configurable and pluggable backends.
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-inth-oauth2" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-11-29, last updated: 2018-10-16">inth-oauth2</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/inth-oauth2"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;programble&#x2F;inth-oauth2"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-inth-oauth2"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/inth-oauth2.svg" />
+    <img src="https://img.shields.io/crates/d/inth-oauth2.svg" />
+    <img src="https://img.shields.io/crates/l/inth-oauth2.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    OAuth2 client
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-yup-oauth2" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-02-27, last updated: 2018-10-07">yup-oauth2</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/yup-oauth2"><i class="fa fa-cube"></i></a>
+  
+
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;docs.rs&#x2F;yup-oauth2&#x2F;"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;dermesser&#x2F;yup-oauth2"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-yup-oauth2"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/yup-oauth2.svg" />
+    <img src="https://img.shields.io/crates/d/yup-oauth2.svg" />
+    <img src="https://img.shields.io/crates/l/yup-oauth2.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An oauth2 implementation, providing the &#x27;device&#x27;, &#x27;service account&#x27; and &#x27;installed&#x27; authorization flows
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-frank_jwt" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-07-27, last updated: 2018-12-07">frank_jwt</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/frank_jwt"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;GildedHonour&#x2F;frank_jwt"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;github.com&#x2F;GildedHonour&#x2F;frank_jwt"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;GildedHonour&#x2F;frank_jwt"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-frank_jwt"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/frank_jwt.svg" />
+    <img src="https://img.shields.io/crates/d/frank_jwt.svg" />
+    <img src="https://img.shields.io/crates/l/frank_jwt.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Implementation of JSON JWT
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-otpauth" class="pkg">
+  <span class="pkg-name"
+    title="est. 2015-05-28, last updated: 2018-10-29">otpauth</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/otpauth"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;github.com&#x2F;messense&#x2F;otpauth-rs"><i class="fa fa-home"></i></a>
+  
+
+
+  
+  <a class="pkg-link" title="documentation" href="https:&#x2F;&#x2F;messense.github.io&#x2F;otpauth-rs"><i class="fa fa-book"></i></a>
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;github.com&#x2F;messense&#x2F;otpauth-rs"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-otpauth"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/otpauth.svg" />
+    <img src="https://img.shields.io/crates/d/otpauth.svg" />
+    <img src="https://img.shields.io/crates/l/otpauth.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    Two-step verification of HOTP&#x2F;TOTP for Rust
+  </p>
+</li>
+
+
+  
+  
+
+
+
+<li id="pkg-asap" class="pkg">
+  <span class="pkg-name"
+    title="est. 2018-07-04, last updated: 2019-03-12">asap</span>
+  
+  <a class="pkg-link" title="crates.io link" href="https://crates.io/crates/asap"><i class="fa fa-cube"></i></a>
+  
+
+  
+  <a class="pkg-link" title="homepage" href="https:&#x2F;&#x2F;bitbucket.org&#x2F;atlassianlabs&#x2F;rust-asap&#x2F;"><i class="fa fa-home"></i></a>
+  
+
+
+  
+
+  
+  <a class="pkg-link" title="repository" href="https:&#x2F;&#x2F;bitbucket.org&#x2F;atlassianlabs&#x2F;rust-asap&#x2F;"><i class="fa fa-code"></i></a>
+  
+
+  <a class="pkg-link action" title="permalink" href="#pkg-asap"><i class="fa fa-hashtag"></i></a>
+
+  
+  <p class="pkg-meta">
+    <img src="https://img.shields.io/crates/v/asap.svg" />
+    <img src="https://img.shields.io/crates/d/asap.svg" />
+    <img src="https://img.shields.io/crates/l/asap.svg" />
+  </p>
+  
+  <p class="pkg-desc">
+    An implementation of ASAP for rust.
+  </p>
+</li>
+
+
+  
+</ul>
+
+
+
+
+
+
+<h3>Still missing...</h3>
+<ul>
+  
+  <li> <p>OAuth-Provider Support</p>
+ </li>
+  
+  <li>
+    and probably some others...
+  </li>
+</ul>
+
+
+
+
+
+
+<div class="alert-box">
+  <h3>Do you know something we don't?</h3>
+  <p>Did we miss an important crate? Or maybe you just recently launched something that should be listed here, too? <a
+      href="https://github.com/bashyHQ/arewewebyet/issues/new" target="_blank">Let us know</a>!
+  </p>
+</div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

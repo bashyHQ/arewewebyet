@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>7 high priority Rust libraries that need to be written » AWWY?</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<div class="news">
+
+
+  <h1>7 high priority Rust libraries that need to be written</h1>
+
+  <div class="meta">
+    Published 2014-06-04 
+    under <ul>
+      
+      <li>
+        database
+      </li>
+      
+      <li>
+        i18n
+      </li>
+      
+      <li>
+        crypto
+      </li>
+      
+    </ul>
+    
+  </div>
+
+
+  
+  <blockquote class="">
+    <cite>
+
+      Posted
+      
+      on <a href="https:&#x2F;&#x2F;mail.mozilla.org&#x2F;pipermail&#x2F;rust-dev&#x2F;2014-June&#x2F;010139.html">rust-dev Mailinglist</a>
+      
+
+      
+      by <span class="name">Brian Anderson</a>
+       :
+    </cite>
+    <p>Greetings, all.</p>
+<p>Looking for ways to have an impact on Rust? The current plan for Rust
+defers the creation of some key libraries until after Rust 1.0, but that
+doesn't mean we can't start on them now if the interest is out there.
+Here are 7 libraries that need to be created soon rather than later.
+Since these are all destined to be either incorporated directly into the
+Rust distribution or to be officially-maintained cargo packages, and
+since they are targeted for inclusion in the post-1.0 timeframe, they
+need to be designed carefully and implemented thoroughly.</p>
+<h3 id="internationalization"><a href="https://github.com/mozilla/rust/issues/14494">Internationalization</a></h3>
+<p>ECMA 402 is a standard for internationalization, dealing with the
+automatic conversion of various information based on locale. Rust's core
+libraries provide <em>no</em> internationalization. A core problem here will be
+determining how Rust should think about locales.</p>
+<h3 id="localization"><a href="https://github.com/mozilla/rust/issues/14495">Localization</a></h3>
+<p>This may depend on the previous for locale support, if nothing else.
+This is largely about the human-assisted translation of strings. We
+would like to experiment with a new Moco-developed standard for this,
+called L20N. This project will be about figuring out how the L20N API
+can be adapted to Rust.</p>
+<h3 id="unicode-icu"><a href="https://github.com/mozilla/rust/issues/14656">Unicode (ICU)</a></h3>
+<p>The exact path forward here may require a bit of discussion still, but I
+think the most viable approach starts with binding libicu and wrapping
+in a Rust API.</p>
+<h3 id="date-time"><a href="https://github.com/mozilla/rust/issues/14657">Date/Time</a></h3>
+<p>Our time crate is very minimal, and the API looks dated. This is a hard
+problem and JodaTime seems to be well regarded so let's just copy it.</p>
+<h3 id="http"><a href="https://github.com/teepee/teepee">HTTP</a></h3>
+<p>ChrisMorgan is leading an effort to implement HTTP for Rust and I'm sure
+he would love more contributions.</p>
+<h3 id="crypto"><a href="https://github.com/mozilla/rust/issues/14655">Crypto</a></h3>
+<p>We've previously made the decision not to distribute any crypto with
+Rust at all, but this is probably not tenable since crypto is used
+everywhere. My current opinion is that we should not distribute any
+crypto /written in Rust/, but that distributing bindings to proven
+crypto is fine.</p>
+<p>Figure out a strategy here, build consensus, then start implementing a
+robust crypto library out of tree, with the goal of merging into the
+main distribution someday, and possibly - far in the future -
+reimplementing in Rust. There are some existing efforts along these
+lines that should be evaluated for this purpose.</p>
+<p>There are a lot of people interested in, and working on, this subject,
+and crypto potentially interacts with many libraries (like HTTP) so
+coordination is needed.</p>
+<h3 id="sql"><a href="https://github.com/mozilla/rust/issues/14658">SQL</a></h3>
+<p>Generic SQL bindings. I'm told SqlAlchemy core is a good system to learn
+from.</p>
+
+  </blockquote>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>

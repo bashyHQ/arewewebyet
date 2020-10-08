@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://arewewebyet.org/sitemap.xml

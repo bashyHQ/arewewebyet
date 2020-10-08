@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/Product">
+
+<head>
+  <meta charset=utf-8>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;styles.css>
+  <link rel=stylesheet href=http:&#x2F;&#x2F;arewewebyet.org&#x2F;gh-fork-ribbon.css>
+  <link href=/atom.xml type=application/atom+xml rel=alternate title="Atom feed (for state changes and news)">
+  <title>Are we web yet? You can build stuff!</title>
+  <meta name="description"
+    content="AreWeWebYet gives insight on whether you can build your latest web-project on top of Rust" />
+
+  <link rel="icon" href="http:&#x2F;&#x2F;arewewebyet.org&#x2F;favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!--  ALL THE STANDARDS for an image!-->
+  <meta itemprop="image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta name="twitter:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+  <meta property="og:image" content=http:&#x2F;&#x2F;arewewebyet.org&#x2F;screenshot.png />
+
+  <!-- Open Graph extra -->
+  <meta property="og:site_name" content="Are We Web Yet?" />
+</head>
+
+<body>
+
+  <div role="content" class="content">
+    
+
+<h1>Topics</h1>
+
+<div>
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/asyncio/">Async I/O</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>List of different packages, related to asynchronous I/O and <code>async/await</code></p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/auth/">Authorization/Authentication</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Authorization and Authentication are a big deal for web development. Take OAuth, the most widely used protocol of authentication between services on the web. Such an simple idea, but with so many varying implementations (twitter, facebook, whatever...) and tricky parts in the details – it's almost impossible to get right without a library. But authentication doesn't end there, how do people authorize against your server? How do you authenticate? These are crates helping you to address authentication problems.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/binary-protocols/">Binary protocols</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Binary protocol support</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/browser/">Browser</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>The Webbrowser is the bastion, the holy grail of web development and one of the biggest projects in the Rust ecosystem focusses exactly on that. If Rust achieves to run a browser engine, be used to write server code while also being used as the frontend-development language <em>within the browser</em>, then it will truly be the language of the web like no other.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/clients/">HTTP Clients</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Without a proper HTTP Client there isn't much web - even for the backend, scraping or API-Services on the web HTTP is the protocol of choice. Thus a stable, strong HTTP-Client stack is very important to any web-ecosystem.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/cms/">CMS</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Basic pages and compiling source content into full websites to be served are one of the fundamental features of the web as we have it today. On this page we cover helpers and projects that aim to lower the workfload on getting this specifc aspect done.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/compression/">Compression Libs</a>
+    
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>One of the first things almost anyone does to improve performance (specifically bandwidth) is to turn on compression. Luckily compression is well supported in rust.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/crypto/">Crypto</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Cryptography is a corner stone of a trusted web. Without it many services could not be offered reliably. While rust has a strong RNG, the main suite in use isn't pure rust but the (in)famous openssl.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/database/">Database drivers</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Proper Database support is crucial for modern web development. This page gives an overview of the various drivers, ORMs, integrations and tools.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/deploy/">Deploying</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>How are on quick and easy deploying of our applications into existing server infrastructures? Well, stuff is looking quite good actually.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/email/">Email</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>What would the web be without Email? One of the easiest authentication and notification systems. Yet, rust support isn't particular great, yet. There is stuff, but there is also room to improve it.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/encoding/">En- & Decoding</a>
+    
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Encoding is one of those things you don't really want to bother about, but just rely on a well tested library for – there are just too many edge and quirky cases. Luckily, as a system language, this is one of the things rust shines at – and offers a set of nice packages already.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/frameworks/">Web Development Frameworks</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>When building a modern web-application you don't want to bother on how to parse the http-header or where the route is supposed to be dispatched to. Frameworks offer exactly those features and make it quick'n'easy to build your specific app on the web-stack.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/i18n/">Internationalisation</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Internationalisation is still very immature and unstable, with most libraries being only weeks old and not used in production yet. In terms of i18n-ized message formatting, current options are gettext, fluent and ICU MessageFormat (via <code>rust_icu</code>).</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/json/">JSON Support</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Whether you are offering an external API or just want to talk to the modern Javascript Frontend Interface, you need to support JSON. And while there is most certainly JSON on the way, many things web-specific are still lacking.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/logging/">Logging</a>
+    
+<span class="level-indicator level-1"  title="pretty great already" >
+ <i class="fa fa-check-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Logging is part of the rust ecosystem for a long time and with log and env_logger you have some great defaults.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/nodejs/">Node.js/Electron</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Node.js and / or Electron specific packages and bindings. You can also use WebAssembly.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/serializer/">Serializers</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>Serializers allow you to easily transfer states and reliably get it back – important not only when working with JSON but also backbone of many types of worker-queue systems. Rust has good support for serializers, yet not many are web-tested...</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/services/">External Services</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>The modern web development stack doesn't only need a web-server but is often built on a range of external services to provide specific features, from worker queues to search and pubsub. Rust support for these is certainly not the greatest, but there are popular crates for the most popular services.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/soap/">SOAP</a>
+    
+<span class="level-indicator level-6"  title="basically non-existent" >
+ <i class="fa fa-times-circle"></i>  </span>
+
+  </h2>
+
+  
+    <p>As terrible as <a href="https://en.wikipedia.org/wiki/SOAP">SOAP</a> might be as a protocol, it is undenyably popular amongst older systems and needed for legacy support. At this moment, rust doesn't offer any help with SOAP development.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/stack/">Lower Web-Stack</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>A strong lower web-stack is important not only to build strong web frameworks on top, but also to allow performance critical systems to reach deeper to squeeze out extra juice. Rust has a good support on HTTP servers, even an HTTP2 implementation, websockets and other protocols.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/syndication/">Syndication/RSS</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>To spread the information syndication has often be announced dead just to still stick around. Parse and generating good RSS isn't especially hard, but also something you don't necessarily want to have to do yourself. There are some libraries and packages to help you with that.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/templating/">Templating</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>No Web-App is complete if it doesn't spit out HTML at least some of the time. Managing that, and making sure it renders performant and can be maintained is what templating libraries focus on. There aren't many yet, but it's better than none!</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/utils/">Web Utils</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>This collects a range of packages which are commonly used and needed in web development, like URL or HTTP-Body-parsers.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/wasm-runtimes/">WebAssembly runtimes</a>
+    
+<span class="level-indicator level-3"  title="not yet stable, but progressing" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>List of standalone WebAssembly runtimes</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/web-apis/">External Web APIs</a>
+    
+<span class="level-indicator level-4"  title="unstable/incomplete, needs work" >
+ <i class="fa fa-dot-circle-o"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>With many Web-Apps we want to reach farther than our locally hosted services and reach APIs hosted by other platforms and services outside our network. While there are a number of them, many are just first version and others (like Facebook) are still absent, leaving a lot of room for improvement.</p>
+
+  
+
+  
+
+  <h2>
+    <a href="http://arewewebyet.org/topics/webassembly/">WebAssembly</a>
+    
+<span class="level-indicator level-2"  title="getting there, stable but still maturing" >
+ <i class="fa fa-chevron-circle-up"></i>
+ </span>
+
+  </h2>
+
+  
+    <p>WebAssembly is currently being designed as an open standard by the W3C Community Group that includes representatives from all major browsers. There are two major libraries for JavaScript ffi - <code>wasm-bindgen</code> and <code>stdweb</code>. Eventually, they will <a href="https://github.com/koute/stdweb/issues/318">share</a> the same build tools. But at the moment to build <code>wasm-bindgen</code> project - <code>wasm-pack</code> is required, and for <code>stdweb</code> there is a <code>cargo-web</code>. Current ffi bindings for JavaScript api are quite low-level. There is an initiative to build a modular toolkit named <a href="https://rustwasm.github.io/2019/03/12/lets-build-gloo-together.html">gloo</a></p>
+
+  
+
+  
+
+</div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="devider">
+      <!-- FIXME: put the Rust Web-WG Brand here?-->
+      <!--         <div class="logo">
+          <a href="http://www.bashy.io" title="a Bashy Production">
+            <img src="/bashy-big.svg" alt="logo" />
+          </a>
+        </div> -->
+      <div class="links">
+        <ul class="pages">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news/">News</a>
+          </li>
+          <li>
+            <a href="/topics/">Topics</a>
+          </li>
+          <li>
+            <a href="/curators/">Curators</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="https://github.com/rust-net-web/arewewebyet/#contributing">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <div class="call-to-action">
+
+      </div>
+    </div>
+    <p class="last-updated">
+      <!-- TODO -->
+      <!-- Last updated {site.time | date_to_string} --> 
+      License:
+      <a href="https://github.com/rust-net-web/arewewebyet/#license"> CC-BY-4.0</a>
+    </p>
+  </footer>
+</body>
+
+</html>
