@@ -44,7 +44,8 @@ pools = [
 tools = [
   "diesel_migrations",
   "migrant",
-  "refinery"
+  "refinery",
+  "oapth"
 ]
 
 newstag = "database"
