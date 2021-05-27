@@ -17,7 +17,8 @@ packages = [
   "serde_qs",
   "serde_urlencoded",
   "multipart",
-  "tiff"
+  "tiff",
+  "ion-binary-rs"
 ]
 
 newstag = "encoding"
