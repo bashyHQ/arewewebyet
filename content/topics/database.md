@@ -25,7 +25,8 @@ drivers = [
   "cdrs",
   "memcache",
   "mongodb",
-  "sqlx"
+  "sqlx",
+  "qldb"
 ]
 
 orms = [
