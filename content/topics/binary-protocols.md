@@ -17,7 +17,8 @@ packages = [
   "tarpc",
   "tonic",
   "flatbuffers",
-  "thrift"
+  "thrift",
+  "ion-binary-rs"
 ]
 
 
