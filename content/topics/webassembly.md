@@ -25,6 +25,9 @@ packages=  [
   "walrus",
   "wasmi",
   "wasm-pack",
+  "wasm-rs-async-executor",
+  "wasm-rs-dbg",
+  "wasm-rs-shared-channel",
   "woz",
   "trunk"
 ]
